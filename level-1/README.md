@@ -2,20 +2,19 @@
 
 ## Objectives
 
-* Given the API: https://jsonplaceholder.typicode.com/users create a webpage that displays user data
-* Only allow the user to select from a subset of the available keys from a dropdown
-* The dropdown has to be dynamically populated on page load
-* Display the user's name + value of the selected key in a table
-* Correctly handle values of keys which are not strings (i.e. Address)
-* Project must be source controlled
+- [x] Given the API: https://jsonplaceholder.typicode.com/users create a webpage that displays user data
+- [x] Only allow the user to select from a subset of the available keys from a dropdown
+- [x] The dropdown has to be dynamically populated on page load
+- [x] Display the user's name + value of the selected key in a table
+- [ ] Correctly handle values of keys which are not strings (i.e. Address)
+- [x] Project must be source controlled
 
 <br />
 
 ## Bonus Objectives
-
-* Instead of using the given API, implement a RESTful API that serves the same data
-* Serve application in a Docker container using the Nginx Image
-* Instead of a single field, allow users to select multiple keys
+- [x] Serve application in a Docker container using the Nginx Image
+- [ ] Instead of using the given API, implement a RESTful API that serves the same data
+- [ ] Instead of a single field, allow users to select multiple keys
 
 <br />
 
