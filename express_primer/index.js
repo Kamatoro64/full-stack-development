@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const logger = require('./middleware/logger');
+const members = require('./Members');
 
 const app = express();
 
@@ -19,7 +20,8 @@ app.use(logger);
 // Create a route
 app.get('/', (req, res) => {
 	res.render('index', {
-		title: 'Member App'
+		title: 'Member App',
+		members // this is the same as members:members 
 	});
 })
 
