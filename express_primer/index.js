@@ -12,7 +12,7 @@ app.set('view engine', 'handlebars');
 
 // Body parser middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: false })); // For form submissions
+app.use(express.urlencoded({ extended: false })); // For form submissions, if removed it does not parse the form data correctly
 
 // Logger middlware (Interestingly this relies on the body parser so it has to come after!)
 app.use(logger);

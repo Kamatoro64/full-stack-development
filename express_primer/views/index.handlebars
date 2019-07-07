@@ -1,8 +1,11 @@
 <h1 class="text-center mb-3">{{title}}</h1>
+<!--HOTKEY h1.text-center.mb-3-->
 <form action="/api/members" method="POST" class="mb-4">
+	<!--HOTKEY form.mb-4-->
 	<div class="form-group">
+		<!--HOTKEY .form-group div. omitted-->
 		<label for="name">Name</label>
-		<input type="text" name="name" class="form-control">
+		<input type="text" name="name" class="form-control"> <!-- name of the key when passing the object -->
 	</div>
 	<div class="form-group">
 		<label for="email">Email</label>
@@ -10,6 +13,10 @@
 	</div>
 	<input type="submit" value="Add Member" class="btn btn-primary btn-block">
 </form>
+
+<!--Form submission in this format requires app.use(express.urlencoded({ extended: false })) in index.js-->
+<!--Read this: https://dev.to/sidthesloth92/understanding-html-form-encoding-url-encoded-and-multipart-forms-3lpa-->
+
 <h4>Members</h4>
 
 <ul class="list-group">
