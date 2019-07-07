@@ -18,7 +18,9 @@ app.use(logger);
 
 // Create a route
 app.get('/', (req, res) => {
-	res.render('index');
+	res.render('index', {
+		title: 'Member App'
+	});
 })
 
 // Set Static Folder
