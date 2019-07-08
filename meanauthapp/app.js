@@ -7,6 +7,8 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+const users = require('./routes/users');
+
 const port = 3000;
 
 // CORS Middleware
@@ -14,6 +16,8 @@ app.use(cors());
 
 // Body Parser Middleware
 app.use(bodyParser.json());
+
+app.use('/users', users); // The users middlware triggers only when /users is hit
 
 // Index Route
 app.get('/', (req, res) => {
